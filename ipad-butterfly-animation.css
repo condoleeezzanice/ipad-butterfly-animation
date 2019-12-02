@@ -1,0 +1,72 @@
+body {
+ background: #E8FDFE;
+}
+
+.container {
+width: 500px;
+height: 500px;
+margin:auto;
+}
+
+#rightwing {
+	animation: rightwing 2s ease-in-out infinite;
+	transform-origin: 330px 350px;
+}
+
+#leftwing {
+	animation: leftwing 2s ease-in-out infinite;
+	transform-origin: 330px 350px;
+}
+
+#leftpupil {
+	animation: leftpupil 12s ease-in-out infinite;
+}
+
+#rightpupil {
+	animation: rightpupil 12s ease-in-out infinite;
+}
+
+#ipad-butterfly {
+  animation: fly 4s ease-in-out infinite;
+}
+
+
+// Keyframes
+
+@keyframes fly {
+        0%   { transform: translateY(0); }
+        50%  { transform: translateY(20px); }
+        100% { transform: translateY(0); }
+    }
+
+
+@keyframes rightwing {
+	from {transform: rotate(0deg);}
+	50% {transform: rotate(10deg);}
+}
+
+@keyframes leftwing {
+	from {transform: rotate(0deg);}
+	50% {transform: rotate(-10deg);}
+}
+
+@keyframes leftpupil {
+	17% {transform: translateX(0);} 
+	20% {transform: translateX(10px);}
+	47% {transform: translateX(10px);}
+	50% {transform: translateX(0) translateY(-30px);}
+	82% {transform: translateX(0) translateY(-10px);}
+	85% {transform: translateX(-10px) translateY(-5px);}
+	97% {transform: translateX(-15px) translateY(-5px);}
+}
+
+@keyframes rightpupil {
+	17% {transform: translateX(0);}
+	20% {transform: translateX(10px);}
+	48% {transform: translateX(10px);}
+	50% {transform: translateX(0) translateY(-30px);}
+	82% {transform: translateX(0) translateY(-10px);}
+	85% {transform: translateX(-10px) translateY(-5px);}
+	97% {transform: translateX(-15px) translateY(-5px);}
+}
+
